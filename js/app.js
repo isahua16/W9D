@@ -1,3 +1,5 @@
+
+//Filling my array with objects
 let tweets = [
     {
         content: `Just tried my first avocado toast and I'm officially obsessed! 😍 #avocadotoast #brunchlife`,
@@ -61,6 +63,8 @@ let tweets = [
     }
 ];
 
+// As long as the user is 18 or over, this script will print the content, username and the date of publication of each tweet to the console
+
 let i = 0;
 while (i < tweets.length)
 {
@@ -71,6 +75,7 @@ while (i < tweets.length)
     i++;
 }
 
+// As long as the user is less than 18, this script will print the content, username and date of publications of each tweet to the console
 for(let i = 0; i < tweets.length; i++)
 {
     if (tweets[i].user_age < 18)
