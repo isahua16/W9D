@@ -61,3 +61,22 @@ let tweets = [
     }
 ];
 
+let i = 0;
+while (i < tweets.length)
+{
+    if (tweets[i].user_age >= 18)
+    {
+        console.log(tweets[i].content, tweets[i].user, tweets[i].date);
+    }
+    i++;
+}
+
+for(let i = 0; i < tweets.length; i++)
+{
+    if (tweets[i].user_age < 18)
+    {
+        console.log(tweets[i].content, tweets[i].user, tweets[i].date);
+    }
+}
+
+
